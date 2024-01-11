@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, input, text-area, button{
-    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 
   button{
