@@ -6,8 +6,6 @@ function App() {
       <GlobalStyle />
       <h1>teste</h1>
     </>
-
-
   );
 }
 
