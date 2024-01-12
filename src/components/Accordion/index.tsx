@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AccordionContainer } from './styles';
+import { AccordionContainer, AccordionItem } from './styles';
 import { iconArrow } from '../../assets/icons';
 
 interface AccordionProps {
@@ -20,8 +20,7 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
   return (
     <AccordionContainer>
       {items.map((item) => (
-        <li
-          className={`accordion-item ${activeItem === item.id ? 'isActive' : ''}`}
+        <AccordionItem isActive={activeItem === item.id ? true : false}
           key={item.id}
           onClick={() => handleItemClick(item.id)}
         >
@@ -36,7 +35,7 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
               typeof item.content === 'string' ? { __html: item.content } : undefined
             }
           />
-        </li>
+        </AccordionItem>
       ))}
     </AccordionContainer>
   );
