@@ -19,7 +19,7 @@ export default function Comments() {
 
   async function onLoadItems() {
     try {
-      const data = await API('commentss');
+      const data = await API('comments');
       setItems(data.map((item: any) => ({ ...item, title: item.name, content: item.body })));
       setError(null);
     } catch (error) {

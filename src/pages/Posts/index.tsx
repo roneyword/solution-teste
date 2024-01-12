@@ -19,7 +19,7 @@ export default function Posts() {
 
   async function onLoadItems() {
     try {
-      const data = await API('postss');
+      const data = await API('posts');
       setItems(data.map((item: any) => ({ ...item, content: item.body })));
       setError(null);
     } catch (error) {
