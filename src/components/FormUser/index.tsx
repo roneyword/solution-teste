@@ -42,62 +42,6 @@ export const FormUser: React.FC = () => {
 
   return (
     <FormContainer onSubmit={handleSubmit(onSubmit)}>
-      {/* <Controller
-        control={control}
-        name="name"
-        render={({ field: { onBlur, onChange, value, ref } }) => (
-          <Input
-            id="name"
-            label="Nome"
-            isRequired
-            type="text"
-            name="name"
-            value={value}
-            error={errors.name?.message}
-            onChange={onChange}
-            onBlur={onBlur}
-            ref={ref}
-          />
-        )}
-      /> */}
-
-      {/* <Controller
-        control={control}
-        name="email"
-        render={({ field: { onBlur, onChange, value, ref } }) => (
-          <Input
-            id="email"
-            label="E-mail"
-            isRequired
-            type="text"
-            name="email"
-            value={value}
-            error={errors.email?.message}
-            onChange={onChange}
-            onBlur={onBlur}
-            ref={ref}
-          />
-        )}
-      /> */}
-
-      {/* <Controller
-        control={control}
-        name="message"
-        render={({ field: { onBlur, onChange, value, ref } }) => (
-          <Textarea
-            id="message"
-            label="Mensagem"
-            isRequired
-            name="message"
-            value={value}
-            error={errors.message?.message}
-            onChange={onChange}
-            onBlur={onBlur}
-            ref={ref}
-          />
-        )}
-      /> */}
-
       <Input
         id="name"
         label="Nome"

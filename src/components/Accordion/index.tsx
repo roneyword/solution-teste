@@ -20,7 +20,7 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
   return (
     <AccordionContainer>
       {items.map((item) => (
-        <AccordionItem isActive={activeItem === item.id ? true : false}
+        <AccordionItem $isActive={activeItem === item.id ? true : false}
           key={item.id}
           onClick={() => handleItemClick(item.id)}
         >
